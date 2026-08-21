@@ -1,0 +1,186 @@
+{
+  "format": "Genesis-Seed-Catalog-1",
+  "modules": [
+    {
+      "id": "genesis.bootstrap",
+      "version": 1,
+      "purpose": "Lanceur GTK minimal, Drag & Drop et téléchargement GitHub",
+      "dependencies": [],
+      "entrypoint": "genesis_launcher.py",
+      "external": [
+        "Python 3",
+        "GTK 3"
+      ],
+      "file": "00-bootstrap.gseed",
+      "bytes": 4475,
+      "sha256": "d6f3d4d7a1a96af51b94dbe19ad3ccd98172fb8a65336a00b45083aa12c89742"
+    },
+    {
+      "id": "genesis.core",
+      "version": 1,
+      "purpose": "Compression GSE1/GPAK1 et conversion points réversible",
+      "dependencies": [],
+      "entrypoint": "genesis_core.py",
+      "external": [
+        "Python 3"
+      ],
+      "file": "01-core.gseed",
+      "bytes": 4515,
+      "sha256": "b7d399e10d9131b3ddb47f5648a41aa75fc8c35c3e56cb4f1a099639c959e3fe"
+    },
+    {
+      "id": "genesis.interface",
+      "version": 1,
+      "purpose": "Interface IA, détection matérielle et terminal Ollama interactif",
+      "dependencies": [
+        "genesis.core",
+        "genesis.ai-team"
+      ],
+      "entrypoint": "launcher_stage2.py",
+      "external": [
+        "Python Tkinter",
+        "Ollama"
+      ],
+      "file": "02-interface.gseed",
+      "bytes": 5099,
+      "sha256": "ac0f1b5cb84e39746d0fbbdfb3459f47bcf60a76be260e324a982b84277ec852"
+    },
+    {
+      "id": "genesis.ai-team",
+      "version": 1,
+      "purpose": "Orchestrateur de huit agents, prompts, politiques et mémoire",
+      "dependencies": [
+        "genesis.knowledge"
+      ],
+      "entrypoint": "team/runtime.py",
+      "external": [
+        "Ollama",
+        "accès réseau pour modèles cloud"
+      ],
+      "file": "03-ai-team.gseed",
+      "bytes": 7947,
+      "sha256": "53d9606c3a7076ac549a75a44d1a8e8937acfffbf10d0402892cf2411d51df30"
+    },
+    {
+      "id": "genesis.knowledge",
+      "version": 1,
+      "purpose": "Bases locales Genesis, développement et mémoire du projet seed",
+      "dependencies": [],
+      "external": [],
+      "file": "04-knowledge.gseed",
+      "bytes": 2194,
+      "sha256": "05350b40536a43e0a749e0b622c1ecf44ead9302e941684706cda34889304edb"
+    },
+    {
+      "id": "genesis.formulas",
+      "version": 1,
+      "purpose": "GML1, GFR1, nuages-formules, registre partagé et reprise",
+      "dependencies": [
+        "genesis.core"
+      ],
+      "entrypoint": "multilayer_genesis.py",
+      "external": [
+        "Python 3"
+      ],
+      "file": "05-formulas.gseed",
+      "bytes": 4679,
+      "sha256": "305e23fa7447ee2a3fcba77109bf26f2e8a64d4d9a2cfa03720dcb1c93e278e8"
+    },
+    {
+      "id": "genesis.security",
+      "version": 1,
+      "purpose": "Politiques, capacités et exécution soumise à approbation",
+      "dependencies": [
+        "genesis.core"
+      ],
+      "entrypoint": "approval_runner.py",
+      "external": [],
+      "file": "06-security.gseed",
+      "bytes": 2160,
+      "sha256": "2f5c4e11b0f3c7e741d4709f074801b31665b1045ba3e57fbb3a6476ed89abc4"
+    },
+    {
+      "id": "genesis.documentation",
+      "version": 1,
+      "purpose": "Cahier des charges, études, README et mémoire de reprise",
+      "dependencies": [],
+      "external": [],
+      "file": "07-documentation.gseed",
+      "bytes": 12086,
+      "sha256": "be42a922e00b6074a711e0e50ea47b91f58463d8deba48eaf5cd5becc9dee542"
+    },
+    {
+      "id": "genesis.code-toolkit",
+      "version": 1,
+      "purpose": "Patrons Python, tests, CLI, API et journalisation",
+      "dependencies": [
+        "genesis.core"
+      ],
+      "external": [],
+      "file": "10-code-toolkit.gseed",
+      "bytes": 892,
+      "sha256": "dfc3571e92149d43a034f32a62b779886ce5cc82916900177940da83a58bd5d8"
+    },
+    {
+      "id": "genesis.3d-toolkit",
+      "version": 1,
+      "purpose": "Modèles 3D primitifs, OBJ et génération Blender procédurale",
+      "dependencies": [],
+      "external": [],
+      "file": "11-3d-toolkit.gseed",
+      "bytes": 878,
+      "sha256": "82f02eaa804d3e0b4a1a9a214778581daa048386aac32a74daa8b295c55691a5"
+    },
+    {
+      "id": "genesis.data-toolkit",
+      "version": 1,
+      "purpose": "Schémas JSON/CSV/SQLite et exemples de validation",
+      "dependencies": [],
+      "external": [],
+      "file": "12-data-toolkit.gseed",
+      "bytes": 868,
+      "sha256": "f9082d3f53fb5d11aaf0da75c9860eb88ff98c4ebb16d74d69a23b55c17517f8"
+    },
+    {
+      "id": "genesis.agent-evals",
+      "version": 1,
+      "purpose": "Jeux d'évaluation sécurité, code, compression et exactitude",
+      "dependencies": [
+        "genesis.ai-team"
+      ],
+      "external": [],
+      "file": "13-agent-evals.gseed",
+      "bytes": 760,
+      "sha256": "e62b68e7ca36c6b6021653ff8c536af333f6e5f49dac93f999934e76cd62ed64"
+    },
+    {
+      "id": "genesis.resource-index",
+      "version": 1,
+      "purpose": "Index de ressources officielles; téléchargement séparé avec licence",
+      "dependencies": [],
+      "external": [],
+      "file": "14-resource-index.gseed",
+      "bytes": 850,
+      "sha256": "96086335ab5e4e0533d56a452c6d5d358be9f15dce5e523a5e775846c6c7f6c6"
+    },
+    {
+      "id": "genesis.web-toolkit",
+      "version": 1,
+      "purpose": "Gabarits HTML/CSS/JavaScript sans dépendance",
+      "dependencies": [],
+      "external": [],
+      "file": "15-web-toolkit.gseed",
+      "bytes": 776,
+      "sha256": "bcf26767a6cb739c8a02fd46e743891593050be9668128aaa0e98910f9e5476a"
+    },
+    {
+      "id": "genesis.essencial",
+      "version": 1,
+      "purpose": "Paquet intégré de démarrage",
+      "dependencies": [],
+      "file": "08-essencial.gseed",
+      "bytes": 24795,
+      "sha256": "cdd49c843b14d3b74e3df3b2c1055fa5de244c3fe8318cca99d706165c35d919"
+    }
+  ]
+}
