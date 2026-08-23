@@ -1,0 +1,230 @@
+{
+  "format": "Genesis-Model-Catalog-1",
+  "warning": "Recipes only; model weights are downloaded separately after permission.",
+  "models": [
+    {
+      "file": "qwen2.5-coder-0.5b.gseed",
+      "model": "qwen2.5-coder:0.5b",
+      "size_gb": 0.398,
+      "ram_gib": 2,
+      "mode": "local"
+    },
+    {
+      "file": "qwen2.5-coder-1.5b.gseed",
+      "model": "qwen2.5-coder:1.5b",
+      "size_gb": 0.986,
+      "ram_gib": 2,
+      "mode": "local"
+    },
+    {
+      "file": "qwen2.5-coder-3b.gseed",
+      "model": "qwen2.5-coder:3b",
+      "size_gb": 1.9,
+      "ram_gib": 3,
+      "mode": "local"
+    },
+    {
+      "file": "qwen2.5-coder-7b.gseed",
+      "model": "qwen2.5-coder:7b",
+      "size_gb": 4.7,
+      "ram_gib": 7,
+      "mode": "local"
+    },
+    {
+      "file": "qwen2.5-coder-14b.gseed",
+      "model": "qwen2.5-coder:14b",
+      "size_gb": 9,
+      "ram_gib": 13,
+      "mode": "local"
+    },
+    {
+      "file": "qwen2.5-coder-32b.gseed",
+      "model": "qwen2.5-coder:32b",
+      "size_gb": 20,
+      "ram_gib": 27,
+      "mode": "local"
+    },
+    {
+      "file": "qwen3-0.6b.gseed",
+      "model": "qwen3:0.6b",
+      "size_gb": 0.523,
+      "ram_gib": 2,
+      "mode": "local"
+    },
+    {
+      "file": "qwen3-1.7b.gseed",
+      "model": "qwen3:1.7b",
+      "size_gb": 1.4,
+      "ram_gib": 2,
+      "mode": "local"
+    },
+    {
+      "file": "qwen3-4b.gseed",
+      "model": "qwen3:4b",
+      "size_gb": 2.5,
+      "ram_gib": 4,
+      "mode": "local"
+    },
+    {
+      "file": "qwen3-8b.gseed",
+      "model": "qwen3:8b",
+      "size_gb": 5.2,
+      "ram_gib": 8,
+      "mode": "local"
+    },
+    {
+      "file": "qwen3-14b.gseed",
+      "model": "qwen3:14b",
+      "size_gb": 9.3,
+      "ram_gib": 13,
+      "mode": "local"
+    },
+    {
+      "file": "qwen3-30b.gseed",
+      "model": "qwen3:30b",
+      "size_gb": 19,
+      "ram_gib": 26,
+      "mode": "local"
+    },
+    {
+      "file": "qwen3-32b.gseed",
+      "model": "qwen3:32b",
+      "size_gb": 20,
+      "ram_gib": 27,
+      "mode": "local"
+    },
+    {
+      "file": "qwen3-235b.gseed",
+      "model": "qwen3:235b",
+      "size_gb": 142,
+      "ram_gib": 192,
+      "mode": "local"
+    },
+    {
+      "file": "gpt-oss-20b.gseed",
+      "model": "gpt-oss:20b",
+      "size_gb": 14,
+      "ram_gib": 19,
+      "mode": "local"
+    },
+    {
+      "file": "gpt-oss-120b.gseed",
+      "model": "gpt-oss:120b",
+      "size_gb": 65,
+      "ram_gib": 88,
+      "mode": "local"
+    },
+    {
+      "file": "gpt-oss-20b-cloud.gseed",
+      "model": "gpt-oss:20b-cloud",
+      "size_gb": 0,
+      "ram_gib": 0,
+      "mode": "cloud"
+    },
+    {
+      "file": "gpt-oss-120b-cloud.gseed",
+      "model": "gpt-oss:120b-cloud",
+      "size_gb": 0,
+      "ram_gib": 0,
+      "mode": "cloud"
+    },
+    {
+      "file": "gemma3-270m.gseed",
+      "model": "gemma3:270m",
+      "size_gb": 0.292,
+      "ram_gib": 2,
+      "mode": "local"
+    },
+    {
+      "file": "gemma3-1b.gseed",
+      "model": "gemma3:1b",
+      "size_gb": 0.815,
+      "ram_gib": 2,
+      "mode": "local"
+    },
+    {
+      "file": "gemma3-4b.gseed",
+      "model": "gemma3:4b",
+      "size_gb": 3.3,
+      "ram_gib": 5,
+      "mode": "local"
+    },
+    {
+      "file": "gemma3-12b.gseed",
+      "model": "gemma3:12b",
+      "size_gb": 8.1,
+      "ram_gib": 11,
+      "mode": "local"
+    },
+    {
+      "file": "gemma3-27b.gseed",
+      "model": "gemma3:27b",
+      "size_gb": 17,
+      "ram_gib": 23,
+      "mode": "local"
+    },
+    {
+      "file": "deepseek-coder-1.3b.gseed",
+      "model": "deepseek-coder:1.3b",
+      "size_gb": 0.776,
+      "ram_gib": 2,
+      "mode": "local"
+    },
+    {
+      "file": "deepseek-coder-6.7b.gseed",
+      "model": "deepseek-coder:6.7b",
+      "size_gb": 3.8,
+      "ram_gib": 6,
+      "mode": "local"
+    },
+    {
+      "file": "deepseek-coder-33b.gseed",
+      "model": "deepseek-coder:33b",
+      "size_gb": 19,
+      "ram_gib": 26,
+      "mode": "local"
+    },
+    {
+      "file": "deepseek-coder-v2-16b.gseed",
+      "model": "deepseek-coder-v2:16b",
+      "size_gb": 8.9,
+      "ram_gib": 13,
+      "mode": "local"
+    },
+    {
+      "file": "deepseek-coder-v2-236b.gseed",
+      "model": "deepseek-coder-v2:236b",
+      "size_gb": 133,
+      "ram_gib": 180,
+      "mode": "local"
+    },
+    {
+      "file": "codellama-7b.gseed",
+      "model": "codellama:7b",
+      "size_gb": 3.8,
+      "ram_gib": 6,
+      "mode": "local"
+    },
+    {
+      "file": "codellama-13b.gseed",
+      "model": "codellama:13b",
+      "size_gb": 7.4,
+      "ram_gib": 10,
+      "mode": "local"
+    },
+    {
+      "file": "codellama-34b.gseed",
+      "model": "codellama:34b",
+      "size_gb": 19,
+      "ram_gib": 26,
+      "mode": "local"
+    },
+    {
+      "file": "codellama-70b.gseed",
+      "model": "codellama:70b",
+      "size_gb": 39,
+      "ram_gib": 53,
+      "mode": "local"
+    }
+  ]
+}
